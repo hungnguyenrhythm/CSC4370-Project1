@@ -1,0 +1,26 @@
+.box {
+    display: inline-grid;
+    border: 1px solid;
+}
+
+.match {
+  grid-area: 1/1;
+  background: green;
+  width: 0%;
+  transition: 0s 0.2s;
+}
+
+.box:active .match{
+  width: 100%;
+  transition: 0s;
+}
+img {
+    grid-area: 1/1;
+    transform: translate(200%);
+    transition: 999s 999s;
+}
+.match:hover + img {
+    background-color: green;
+    transform: translate(0);
+    transition: 0s;
+}

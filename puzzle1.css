@@ -1,26 +1,77 @@
+/* Define the body and the display wall */
+body {
+  margin: 0px;
+  height: auto;
+}
+h1{
+  margin: 0px;
+  margin-bottom: 37px;
+}
+#center {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid black;
+}
+#floor{
+  margin: 0px;
+  display: block;
+  height: 350.1px;
+  width: 100%;
+  background-color: brown;
+}
+/* Define the drag and drop animation */
 .box {
-    display: inline-grid;
-    border: 1px solid;
+  display: grid;
+  border: 1px solid;
+  pointer-events: none;
+  vertical-align: bottom;
+  margin: 30px;
+  padding: 0px;
+}
+.box > *{
+  pointer-events: initial;
 }
 
 .match {
-  grid-area: 1/1;
-  background: green;
-  width: 0%;
-  transition: 0s 0.2s;
+grid-area: 1/1;
+background: green;
+width: 0%;
+transition: 0s 0.2s;
 }
 
 .box:active .match{
-  width: 100%;
-  transition: 0s;
+width: 100%;
+transition: 0s;
 }
 img {
-    grid-area: 1/1;
-    transform: translate(200%);
-    transition: 999s 999s;
+  grid-area: 1/1;
+  transform: translate(200%);
+  transition: 999s 999s;
 }
-.match:hover + img {
-    background-color: green;
-    transform: translate(0);
-    transition: 0s;
+.match:hover + #mona {
+  background-color: green;
+  transform: translate(-200px, -300px);
+  transition: 0s;
+}
+
+.match:hover + #portrait {
+  background-color: green;
+  transform: translate(0);
+  transition: 0s;
+}
+
+/* Define the specifications of the images and their dropboxes */
+#vinci {
+  width: 192.5px;
+  height: 288.5px;
+}
+#gogh {
+  width: 204px;
+  height: 247px;
+}
+#mona{
+  position: relative;
+  left: 200px;
+  top: 300px;
 }

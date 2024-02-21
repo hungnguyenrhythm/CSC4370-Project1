@@ -1,0 +1,47 @@
+:root {
+	--width: 300px;
+	--height: 370px;
+}
+#wrapper {
+	display: flex;
+}
+#wrapper img {
+	margin: auto;
+}
+#container {
+	border: 5px solid blue;
+	width: calc(var(--width) + 60px);
+	height: calc(var(--height) + 60px);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+#container2 {
+	width: var(--width);
+	height: var(--height);
+}
+.grid{
+	margin: auto;
+	width: calc(var(--width)/3);
+	height: calc(var(--height)/3);
+	background-image: url('test_image.jpg');
+	background-size: var(--width) var(--height);
+}
+.r1 {
+	background-position-y: left;
+}
+.r2 {
+	background-position-y: center;
+}
+.r3 {
+	background-position-y: bottom;
+}
+.c1 {
+	background-position-x: top;
+}
+.c2 {
+	background-position-x: center;
+}
+.c3 {
+	background-position-x: right;
+}

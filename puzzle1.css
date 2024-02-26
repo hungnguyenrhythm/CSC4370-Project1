@@ -6,19 +6,14 @@ body {
 h1{
   margin: 0px;
   margin-bottom: 37px;
+  text-align: center;
+  font-family: 'Courier New', monospace;
 }
 #center {
   display: flex;
   margin-left: auto;
   margin-right: auto;
   border: 4px solid black;
-}
-#floor{
-  margin: 0px;
-  display: block;
-  height: 350.1px;
-  width: 100%;
-  background-color: brown;
 }
 /* Define the drag and drop animation */
 .box {
@@ -51,16 +46,21 @@ img {
 }
 .match:hover + #mona {
   background-color: green;
-  transform: translate(-200px, -300px);
+  transform: translate(-200px, -320px);
   transition: 0s;
 }
 
 .match:hover + #portrait {
   background-color: green;
-  transform: translate(0);
+  transform: translate(-200px, -320px);
   transition: 0s;
 }
 
+.match:hover + #jesus{
+  background-color: green;
+  transform: translate(1300px, -320px);
+  transition: 0s;
+}
 /* Define the specifications of the images and their dropboxes */
 #vinci {
   width: 192.5px;
@@ -70,8 +70,25 @@ img {
   width: 204px;
   height: 247px;
 }
+#supper {
+  width: 386px;
+  height: 206.5px;
+}
+
 #mona{
   position: relative;
   left: 200px;
-  top: 300px;
+  top: 320px;
+}
+
+#portrait{
+  position: relative;
+  top: 320px;
+  left: 200px;
+}
+
+#jesus{
+  position: relative;
+  right: 1300px;
+  top: 320px;
 }

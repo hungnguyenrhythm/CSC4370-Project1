@@ -3,9 +3,10 @@ body {
   margin: 0px;
   height: auto;
   background: url('puzzle1_background.png');
+  background-repeat: repeat;
 }
 #header{
-  width: 1000px;
+  width: auto;
   height: 80px;
   margin: 0px;
   position: relative;
@@ -16,12 +17,12 @@ body {
 #timer{
   margin: 0px;
   border: 0px;
-  width: 1000px;
+  width: auto;
   height: 80px;
   background-color: green;
   animation-name: timer;
   animation-delay: 2s;
-  animation-duration: 28s;
+  animation-duration: 13s;
   animation-fill-mode: forwards;
   position: relative;
   margin-left: auto;
@@ -30,7 +31,7 @@ body {
 @keyframes timer{
   0% {
     background-color: green;
-    width: 1000px;
+    width: auto;
   }
   25% {
     background-color: yellow;
@@ -47,7 +48,6 @@ body {
   100% {
     background-color: red;
     transform: scaleX(0);
-    width: 0px;
   }
 }
 
@@ -60,7 +60,7 @@ h1{
   font-family: 'Courier New', monospace;
   font-size: 35px;
   animation-name: shrink;
-  animation-duration: 28s;
+  animation-duration: 13s;
   animation-delay: 2s;
   animation-fill-mode: forwards;
 }
@@ -83,12 +83,66 @@ h1{
     font-size: 0px;
   }
 }
+
+/* Define the result screen and its animation */
+#result {
+  z-index: 1;
+  width: auto;
+  height: 1500px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 1500px;
+  background-color: black;
+  opacity: 0;
+  animation-name: resultScreen;
+  animation-delay: 15s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes resultScreen{
+  from {
+    top: 1500px;
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-1580px);
+    opacity: 0.8;
+  }
+}
+/* Define the main menu button and the next button in the result screen */
+button {
+  margin: 30px;
+  position: relative;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 26pt;
+  color: black;
+  text-align: center;
+}
+
+#nextBtn{
+  background-color: #539904;
+  opacity: 0.6;
+}
+#nextBtn:hover{
+  opacity: 1;
+}
+#mainMnu{
+  background-color: #B20AF5;
+  opacity: 0.6;
+}
+#mainMnu:hover{
+  opacity: 1;
+}
 /* Define the wall */
 #center {
   display: flex;
   margin-left: auto;
   margin-right: auto;
   border: 4px solid black;
+  position: relative;
+  top: -1500px;
 }
 /* Define the drag and drop animation */
 .box {

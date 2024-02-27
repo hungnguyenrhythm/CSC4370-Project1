@@ -2,12 +2,11 @@
 body {
   margin: 0px;
   height: auto;
+  background: url('puzzle1_background.png');
 }
 #header{
   width: 1000px;
   height: 80px;
-  background-color: black;
-  opacity: 0.6;
   margin: 0px;
   position: relative;
   margin-left: auto;
@@ -21,8 +20,8 @@ body {
   height: 80px;
   background-color: green;
   animation-name: timer;
-  animation-delay: 1s;
-  animation-duration: 30s;
+  animation-delay: 2s;
+  animation-duration: 28s;
   animation-fill-mode: forwards;
   position: relative;
   margin-left: auto;
@@ -61,8 +60,8 @@ h1{
   font-family: 'Courier New', monospace;
   font-size: 35px;
   animation-name: shrink;
-  animation-duration: 30s;
-  animation-delay: 1s;
+  animation-duration: 28s;
+  animation-delay: 2s;
   animation-fill-mode: forwards;
 }
 
@@ -94,7 +93,7 @@ h1{
 /* Define the drag and drop animation */
 .box {
   display: grid;
-  border: 1px solid;
+  border: 3px solid;
   pointer-events: none;
   vertical-align: bottom;
   margin: 30px;
@@ -122,19 +121,30 @@ img {
 }
 .match:hover + #mona {
   background-color: green;
-  transform: translate(-200px, -320px);
+  transform: translate(-150px, -320px);
   transition: 0s;
 }
 
 .match:hover + #portrait {
   background-color: green;
-  transform: translate(-200px, -320px);
+  transform: translate(-150px, -320px);
   transition: 0s;
 }
 
 .match:hover + #jesus{
   background-color: green;
   transform: translate(1300px, -320px);
+  transition: 0s;
+}
+.match:hover + #couple{
+  background-color: green;
+  transform: translate(100px, -320px);
+  transition: 0s;
+}
+
+.match:hover + #mother{
+  background-color: green;
+  transform: translate(625px, -320px);
   transition: 0s;
 }
 /* Define the specifications of the images and their dropboxes */
@@ -151,20 +161,41 @@ img {
   height: 206.5px;
 }
 
+#eyck {
+  width: 197px;
+  height: 250px;
+}
+
+#raphael{
+  width: 212px;
+  height: 320px;
+}
+
 #mona{
   position: relative;
-  left: 200px;
+  left: 150px;
   top: 320px;
 }
 
 #portrait{
   position: relative;
   top: 320px;
-  left: 200px;
+  left: 150px;
 }
 
 #jesus{
   position: relative;
   right: 1300px;
   top: 320px;
+}
+
+#couple {
+  position: relative;
+  top: 320px;
+  right: 100px;
+}
+#mother{
+  position: relative;
+  top: 320px;
+  right: 625px;
 }

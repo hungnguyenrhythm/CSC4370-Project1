@@ -3,12 +3,88 @@ body {
   margin: 0px;
   height: auto;
 }
-h1{
+#header{
+  width: 1000px;
+  height: 80px;
+  background-color: black;
+  opacity: 0.6;
   margin: 0px;
-  margin-bottom: 37px;
-  text-align: center;
-  font-family: 'Courier New', monospace;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
+/* Define the timer header*/
+#timer{
+  margin: 0px;
+  border: 0px;
+  width: 1000px;
+  height: 80px;
+  background-color: green;
+  animation-name: timer;
+  animation-delay: 1s;
+  animation-duration: 30s;
+  animation-fill-mode: forwards;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+@keyframes timer{
+  0% {
+    background-color: green;
+    width: 1000px;
+  }
+  25% {
+    background-color: yellow;
+    transform: scaleX(0.75);
+  }
+  50% {
+    background-color: orange;
+    transform: scaleX(0.5);
+  }
+  75% {
+    background-color: red;
+    transform: scaleX(0.25);
+  }
+  100% {
+    background-color: red;
+    transform: scaleX(0);
+    width: 0px;
+  }
+}
+
+h1{
+  border: 0px;
+  margin: 0px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+  font-size: 35px;
+  animation-name: shrink;
+  animation-duration: 30s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shrink {
+  0% {
+    font-size: 35px;
+  }
+  25% {
+    transform: scale(0.75);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  75% {
+    transform: scale(0.25);
+  }
+  100% {
+    transform: scale(0);
+    font-size: 0px;
+  }
+}
+/* Define the wall */
 #center {
   display: flex;
   margin-left: auto;

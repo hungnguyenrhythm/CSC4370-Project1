@@ -1,82 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Puzzle 2 - The 80s</title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="puzzle2.css" />
-  </head>
-  <body>
-    <header>
-      <a class="nav" href="index.html">Home</a>
-      <a class="nav" href="puzzle2.html">Reset</a>
-    </header>
-    <h1>The 80s</h1>
-    <p>Drag & drop the puzzle<br />pieces to their respective tiles!</p>
-    <div id="grid" style="--i: url(test_image.jpg)">
-      <div class="piece">
-        <div class="first"></div>
-        <div class="second" draggable="true"></div>
-      </div>
-      <div class="piece">
-        <div class="first"></div>
-        <div class="second" draggable="true"></div>
-      </div>
-      <div class="piece">
-        <div class="first"></div>
-        <div class="second" draggable="true"></div>
-      </div>
-      <div class="piece">
-        <div class="first"></div>
-        <div class="second" draggable="true"></div>
-      </div>
-      <div class="piece">
-        <div class="first"></div>
-        <div class="second" draggable="true"></div>
-      </div>
-      <div class="piece">
-        <div class="first"></div>
-        <div class="second" draggable="true"></div>
-      </div>
-      <div class="piece">
-        <div class="first"></div>
-        <div class="second" draggable="true"></div>
-      </div>
-      <div class="piece">
-        <div class="first"></div>
-        <div class="second" draggable="true"></div>
-      </div>
-      <div class="piece">
-        <div class="first"></div>
-        <div class="second" draggable="true"></div>
-      </div>
-      <div class="piece">
-        <div class="first"></div>
-        <div class="second" draggable="true"></div>
-      </div>
-      <div class="piece">
-        <div class="first"></div>
-        <div class="second" draggable="true"></div>
-      </div>
-      <div class="piece">
-        <div class="first"></div>
-        <div class="second" draggable="true"></div>
-      </div>
-      <div class="piece">
-        <div class="first"></div>
-        <div class="second" draggable="true"></div>
-      </div>
-      <div class="piece">
-        <div class="first"></div>
-        <div class="second" draggable="true"></div>
-      </div>
-      <div class="piece">
-        <div class="first"></div>
-        <div class="second" draggable="true"></div>
-      </div>
-      <div class="piece">
-        <div class="first"></div>
-        <div class="second" draggable="true"></div>
-      </div>
+<head>
+    <link rel="stylesheet" href="puzzle2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Era Puzzle</title>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">Task: find and click the rotated puzzles to bring it back!</div>
+  </header>
+
+<div id="buttonAndPuzzle">
+    <div class="container">
+        <input type="checkbox" id="myCheckbox1" class="hidden-checkbox">
+        <label for="myCheckbox1" class="checkbox-image"><img src="./image/image_part_001.jpg"></label>
+        <div class="box">
+            <img id="pic2" src="./image/image_part_002.jpg">
+        </div>
+        <div class="box">
+            <img id="pic3" src="./image/image_part_003.jpg">
+        </div>
+        <div class="box">
+            <img id="pic4" src="./image/image_part_004.jpg">
+        </div>
+        <div class="box">
+            <img id="pic5" src="./image/image_part_005.jpg">
+        </div>
+    
+        <input type="checkbox" id="myCheckbox6" class="hidden-checkbox">
+        <label for="myCheckbox6" class="checkbox-image"><img src="./image/image_part_006.jpg"></label>
+    
+        <input type="checkbox" id="myCheckbox7" class="hidden-checkbox">
+        <label for="myCheckbox7" class="checkbox-image"><img src="./image/image_part_007.jpg"></label>
+    
+        <div class="box">
+            <img id="pic8" src="./image/image_part_008.jpg">
+        </div>
+        <div class="box">
+            <img id="pic9" src="./image/image_part_009.jpg">
+        </div>
+    
+        <div class="box">
+            <img id="pic10" src="./image/image_part_010.jpg">
+        </div>
+        
+        <input type="checkbox" id="myCheckbox11" class="hidden-checkbox">
+        <label for="myCheckbox11" class="checkbox-image"><img src="./image/image_part_011.jpg"></label>
+    
+        <div class="box">
+            <img id="pic12" src="./image/image_part_012.jpg">
+        </div>
+        <div class="box">
+            <img id="pic13" src="./image/image_part_013.jpg">
+        </div>
+    
+        <input type="checkbox" id="myCheckbox14" class="hidden-checkbox">
+        <label for="myCheckbox14" class="checkbox-image"><img src="./image/image_part_014.jpg"></label>
+    
+        <div class="box">
+            <img id="pic15" src="./image/image_part_015.jpg">
+        </div>
+    
+        <input type="checkbox" id="myCheckbox16" class="hidden-checkbox">
+        <label for="myCheckbox16" class="checkbox-image"><img src="./image/image_part_016.jpg"></label>
+    
     </div>
-  </body>
+        
+    <div>
+        <a href="index.html"><button id="submitBtn">Submit</button></a>
+        <a href="index.html"><button id="returnBtn">Return</button></a>
+    </div>
+</div>
+</body>
 </html>

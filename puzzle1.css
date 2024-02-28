@@ -149,7 +149,6 @@ button {
   display: grid;
   border: 3px solid;
   pointer-events: none;
-  vertical-align: bottom;
   margin: 30px;
   padding: 0px;
 }
